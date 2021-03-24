@@ -1,24 +1,63 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import {
+  IconsEdukasiOff,
+  IconsEdukasiOn,
+  IconsHiburanOff,
+  IconsHiburanOn,
+  IconsHomeOff,
+  IconsHomeOn,
+  IconsInfoOff,
+  IconsInfoOn,
+} from "../components/Icons";
 
 export default function BottomNav() {
+  const pathname = useLocation().pathname;
   return (
-    <div className="h-16 w-full bg-gray-700 fixed bottom-0 p-2 flex flex-row justify-around items-center">
-      <div className="flex flex-col justify-center items-center p-2 hover:bg-red-400 transition-all ease-out duration-75 cursor-pointer">
-        <div className="w-8 h-8 bg-white rounded-full" />
-        <small className="font-semibold text-white">Home</small>
-      </div>
-      <div className="flex flex-col justify-center items-center p-2 hover:bg-red-400 transition-all ease-out duration-75 cursor-pointer">
-        <div className="w-8 h-8 bg-white rounded-full" />
-        <small className="font-semibold text-white">Edukasi</small>
-      </div>
-      <div className="flex flex-col justify-center items-center p-2 hover:bg-red-400 transition-all ease-out duration-75 cursor-pointer">
-        <div className="w-8 h-8 bg-white rounded-full" />
-        <small className="font-semibold text-white">Hiburan</small>
-      </div>
-      <div className="flex flex-col justify-center items-center p-2 hover:bg-red-400 transition-all ease-out duration-75 cursor-pointer">
-        <div className="w-8 h-8 bg-white rounded-full" />
-        <small className="font-semibold text-white">Info</small>
-      </div>
+    <div className="h-16 w-full bg-textColor fixed bottom-0 p-2 flex flex-row justify-around items-center">
+      <Link
+        to="/"
+        className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-mainColor w-16"
+      >
+        {pathname === "/" ? (
+          <>
+            <IconsHomeOn className="w-7 h-7" />
+            <small className="font-semibold transition-all ease-out duration-100">Home</small>
+          </>
+        ) : (
+          <IconsHomeOff className="w-7 h-7" />
+        )}
+      </Link>
+      <Link to='/edukasi/asi' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-mainColor w-16">
+        {pathname.includes("edukasi") ? (
+          <>
+            <IconsEdukasiOn className="w-7 h-7" />
+            <small className="font-semibold transition-all ease-out duration-100">Edukasi</small>
+          </>
+        ) : (
+          <IconsEdukasiOff className="w-7 h-7" />
+        )}
+      </Link>
+      <Link to='/hiburan/videos' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-mainColor w-16">
+        {pathname.includes("hiburan") ? (
+          <>
+            <IconsHiburanOn className="w-7 h-7" />
+            <small className="font-semibold transition-all ease-out duration-100">Hiburan</small>
+          </>
+        ) : (
+          <IconsHiburanOff className="w-7 h-7" />
+        )}
+      </Link>
+      <Link to='/about-us' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-mainColor w-16">
+        {pathname === "/about-us" ? (
+          <>
+            <IconsInfoOn className="w-7 h-7" />
+            <small className="font-semibold transition-all ease-out duration-100">Info</small>
+          </>
+        ) : (
+          <IconsInfoOff className="w-7 h-7" />
+        )}
+      </Link>
     </div>
   );
 }
