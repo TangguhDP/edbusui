@@ -5,7 +5,7 @@ export default function Card({ title, className, to }) {
   return (
     <Link
       to={to || "/"}
-      className={`w-full h-28 rounded-md relative ring-1 ring-gray-400 shadow-lg flex transition-all ease-in-out focus:outline-none cursor-pointer ${className}`}
+      className={`w-full h-28 rounded-md relative ring-1 ring-gray-400 shadow-lg flex transition-all ease-in-out focus:outline-none cursor-pointer overflow-hidden ${className}`}
     >
       <img
         alt="Banner"
