@@ -28,7 +28,7 @@ export default function BottomNav() {
           <IconsHomeOff className="w-7 h-7" />
         )}
       </Link>
-      <Link to='/edukasi/asi' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-clearDay w-16">
+      <Link to='/edukasi' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-clearDay w-16">
         {pathname.includes("edukasi") ? (
           <>
             <IconsEdukasiOn className="w-7 h-7" />
@@ -38,7 +38,7 @@ export default function BottomNav() {
           <IconsEdukasiOff className="w-7 h-7" />
         )}
       </Link>
-      <Link to='/hiburan/videos' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-clearDay w-16">
+      <Link to='/hiburan' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-clearDay w-16">
         {pathname.includes("hiburan") ? (
           <>
             <IconsHiburanOn className="w-7 h-7" />
