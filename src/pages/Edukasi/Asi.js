@@ -1,34 +1,17 @@
 import React from "react";
+import Hero from "../../components/Hero";
 
 export default function Asi() {
   return (
     <>
-      <section className="text-gray-600">
-        <div className="container mx-auto flex md:flex-row flex-col items-center">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-10 md:mb-0">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src="https://dummyimage.com/720x600"
-            />
-          </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900">
-              ASI Eksklusif
-            </h1>
-            <p className="mb-8 leading-relaxed text-justify md:text-left">
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Hero title="ASI Eksklusif" />
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap flex-col">
           <div className="flex mx-auto flex-wrap mb-20">
-            <a href='/#' className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none border-indigo-500 text-indigo-500 tracking-wider rounded-t">
+            <a
+              href="/#"
+              className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none border-indigo-500 text-indigo-500 tracking-wider rounded-t"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -42,7 +25,10 @@ export default function Asi() {
               </svg>
               Penjelasan
             </a>
-            <a href='/#' className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
+            <a
+              href="/#"
+              className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -56,7 +42,10 @@ export default function Asi() {
               </svg>
               Timeline
             </a>
-            <a href='/#' className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
+            <a
+              href="/#"
+              className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -71,7 +60,10 @@ export default function Asi() {
               </svg>
               Manfaat untuk Ibu
             </a>
-            <a href='/#' className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider">
+            <a
+              href="/#"
+              className="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
