@@ -14,10 +14,10 @@ import {
 export default function BottomNav() {
   const pathname = useLocation().pathname;
   return (
-    <div className="h-16 w-full bg-textColor fixed bottom-0 p-2 flex flex-row justify-around items-center">
+    <div className="h-16 w-full bg-greenPea fixed bottom-0 p-2 flex flex-row justify-around items-center">
       <Link
         to="/"
-        className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-mainColor w-16"
+        className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-clearDay w-16"
       >
         {pathname === "/" ? (
           <>
@@ -28,7 +28,7 @@ export default function BottomNav() {
           <IconsHomeOff className="w-7 h-7" />
         )}
       </Link>
-      <Link to='/edukasi/asi' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-mainColor w-16">
+      <Link to='/edukasi/asi' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-clearDay w-16">
         {pathname.includes("edukasi") ? (
           <>
             <IconsEdukasiOn className="w-7 h-7" />
@@ -38,7 +38,7 @@ export default function BottomNav() {
           <IconsEdukasiOff className="w-7 h-7" />
         )}
       </Link>
-      <Link to='/hiburan/videos' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-mainColor w-16">
+      <Link to='/hiburan/videos' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-clearDay w-16">
         {pathname.includes("hiburan") ? (
           <>
             <IconsHiburanOn className="w-7 h-7" />
@@ -48,7 +48,7 @@ export default function BottomNav() {
           <IconsHiburanOff className="w-7 h-7" />
         )}
       </Link>
-      <Link to='/about-us' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-mainColor w-16">
+      <Link to='/about-us' className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-clearDay w-16">
         {pathname === "/about-us" ? (
           <>
             <IconsInfoOn className="w-7 h-7" />

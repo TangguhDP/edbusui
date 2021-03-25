@@ -5,10 +5,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      'textColor': '#1E6262', 
-      'hoverColor': '#2D767F', 
-      'mainColor': '#ECFFFB', 
-      'secondaryColor': '#B4F1F1', 
+      'greenPea': '#1E6262', 
+      'paradiso': '#2D767F', 
+      'clearDay': '#ECFFFB', 
+      'mintTulip': '#B4F1F1', 
       'backgroundColor': '#FDFDFD', 
       transparent: "transparent",
       current: "currentColor",
