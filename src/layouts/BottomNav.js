@@ -14,7 +14,7 @@ import {
 export default function BottomNav() {
   const pathname = useLocation().pathname;
   return (
-    <div className="h-16 w-full bg-greenPea fixed bottom-0 p-2 flex flex-row justify-around items-center">
+    <div className="sm:hidden h-16 w-full bg-greenPea fixed bottom-0 p-2 flex flex-row justify-around items-center">
       <Link
         to="/"
         className="flex flex-col justify-center items-center p-2 transition-all ease-out duration-75 text-clearDay w-16"

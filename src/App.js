@@ -14,11 +14,13 @@ import Videos from "./pages/Hiburan/Videos";
 import VRs from "./pages/Hiburan/VRs";
 import Content from "./layouts/Content";
 import { history } from "./helper/history";
+import TopNav from "./layouts/TopNav";
 
 function App() {
   return (
     <Router history={history}>
       <Content>
+        <TopNav/>
         <Banner />
         <div className="container mx-auto p-4 mb-16">
           <Switch>
