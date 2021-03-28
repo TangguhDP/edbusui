@@ -1,25 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Banner from "./layouts/Banner";
+import BottomNav from "./layouts/BottomNav";
+import { Router, Switch, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+import AboutUs from "./pages/AboutUs";
+import Edukasi from "./pages/Edukasi";
+import Asi from "./pages/Edukasi/Asi";
+import Menyusui from "./pages/Edukasi/Menyusui";
+import Partner from "./pages/Edukasi/Partner";
+import Oksitosin from "./pages/Edukasi/Oksitosin";
+import Hiburan from "./pages/Hiburan";
+import Videos from "./pages/Hiburan/Videos";
+import VRs from "./pages/Hiburan/VRs";
+import Content from "./layouts/Content";
+import { history } from "./helper/history";
+import TopNav from "./layouts/TopNav";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className='text-blue-500'>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={history}>
+      <Content>
+        <TopNav/>
+        <Banner />
+        <div className="container mx-auto p-4 mb-16">
+          <Switch>
+            <Route exact path="/" component={Landing} />
+            <Route exact path="/about-us" component={AboutUs} />
+            <Route exact path="/edukasi" component={Edukasi} />
+            <Route exact path="/edukasi/asi" component={Asi} />
+            <Route exact path="/edukasi/oksitosin" component={Oksitosin} />
+            <Route exact path="/edukasi/menyusui" component={Menyusui} />
+            <Route exact path="/edukasi/partner-menyusui" component={Partner} />
+            <Route exact path="/hiburan" component={Hiburan} />
+            <Route exact path="/hiburan/videos" component={Videos} />
+            <Route exact path="/hiburan/vr-videos" component={VRs} />
+          </Switch>
+        </div>
+        <BottomNav />
+      </Content>
+    </Router>
   );
 }
 
