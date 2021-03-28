@@ -15,6 +15,7 @@ import VRs from "./pages/Hiburan/VRs";
 import Content from "./layouts/Content";
 import { history } from "./helper/history";
 import TopNav from "./layouts/TopNav";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route exact path="/hiburan" component={Hiburan} />
             <Route exact path="/hiburan/videos" component={Videos} />
             <Route exact path="/hiburan/vr-videos" component={VRs} />
+            <Route component={NotFound}/>
           </Switch>
         </div>
         <BottomNav />
