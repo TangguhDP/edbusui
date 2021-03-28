@@ -5,15 +5,15 @@ export default function Oksitosin() {
   return (
     <>
       <Hero title="Hormon Oksitosin" />
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font md:mt-6">
         <div className="container mx-auto flex flex-wrap">
           <div className="flex flex-wrap w-full">
             <img
-              className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mb-12"
+              className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mb-12 md:pr-10 md:py-6"
               src="https://dummyimage.com/1200x500"
               alt="step"
             />
-            <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+            <div className="lg:w-2/5 md:w-1/2">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none" />

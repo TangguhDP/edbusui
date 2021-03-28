@@ -5,7 +5,7 @@ export default function Asi() {
   return (
     <>
       <Hero title="ASI Eksklusif" />
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font md:mt-6">
         <div className="container mx-auto flex flex-wrap flex-col">
           <div className="flex mx-auto flex-wrap mb-20">
             <a

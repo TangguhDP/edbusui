@@ -5,15 +5,13 @@ export default function Videos() {
   return (
     <>
      <Hero title='Audio Visual'/>
-      <section className="overflow-hidden text-gray-700 body-font">
+      <section className="overflow-hidden text-gray-700 body-font md:mt-6">
         <div className="container mx-auto lg:px-10">
           <div className="flex flex-wrap md:flex-no-wrap">
-            <div className="w-full ">
+            <div className="w-full h-full">
               <iframe
                 title="video"
-                className="object-cover object-center w-full h-64 rounded-lg lg:h-auto"
-                // width="560"
-                // height="315"
+                className="object-cover object-center w-full md:w-5/6 mx-auto h-64 rounded-lg md:h-xxl"
                 src="https://www.youtube.com/embed/videoseries?list=PLHH1cK99CprSYH-HwyHvWm-OvQFzuXxrJ"
                 frameBorder="0"
                 allow="autoplay; encrypted-media"

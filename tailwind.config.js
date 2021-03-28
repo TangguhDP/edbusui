@@ -1,15 +1,15 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      'greenPea': '#1E6262', 
-      'paradiso': '#2D767F', 
-      'clearDay': '#ECFFFB', 
-      'mintTulip': '#B4F1F1', 
-      'backgroundColor': '#FDFDFD', 
+      greenPea: "#1E6262",
+      paradiso: "#2D767F",
+      clearDay: "#ECFFFB",
+      mintTulip: "#B4F1F1",
+      backgroundColor: "#FDFDFD",
       transparent: "transparent",
       current: "currentColor",
       black: colors.black,
@@ -22,9 +22,16 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
-
     },
-    extend: {},
+    extend: {
+      height: {
+        sm: "8px",
+        md: "16px",
+        lg: "24px",
+        xl: "48px",
+        xxl: "615px"
+      },
+    },
   },
   variants: {
     extend: {},
