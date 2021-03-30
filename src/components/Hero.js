@@ -6,9 +6,9 @@ export default function Hero(props) {
       <div className="container mx-auto flex md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-10 md:mb-0">
           <img
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded w-auto h-96"
             alt="hero"
-            src="https://dummyimage.com/720x600"
+            src={props.img || `https://dummyimage.com/720x600`}
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">

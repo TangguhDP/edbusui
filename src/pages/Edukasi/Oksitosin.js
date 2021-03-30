@@ -8,7 +8,7 @@ export default function Oksitosin() {
     <>
       <Banner/>
       <Wrapper>
-        <Hero title="Hormon Oksitosin" />
+        <Hero img='../images/Hormon_Oksitosin.png' title="Hormon Oksitosin" />
         <section className="text-gray-600 body-font md:mt-6">
           <div className="container mx-auto flex flex-wrap">
             <div className="flex flex-wrap w-full">

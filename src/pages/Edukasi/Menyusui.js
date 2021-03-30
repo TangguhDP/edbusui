@@ -8,7 +8,7 @@ export default function Menyusui() {
     <>
       <Banner/>
       <Wrapper>
-        <Hero title="Cara Menyusui" />
+        <Hero img='../images/Cara_Menyusui.png' title="Cara Menyusui" />
         <section className="text-gray-600 body-font md:mt-6">
           <div className="container mx-auto flex flex-wrap">
             <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">

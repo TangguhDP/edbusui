@@ -8,7 +8,7 @@ export default function Partner() {
     <>
       <Banner />
       <Wrapper>
-        <Hero title="Partner" />
+        <Hero img='../images/Partner_Menyusui.png' title="Partner" />
         <section className="text-gray-600 body-font md:mt-6">
           <div className="container mx-auto flex flex-wrap">
             <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">

@@ -12,10 +12,26 @@ export default function index() {
           Edukasi
         </h1>
         <div className="grid grid-cols-2 gap-x-5 gap-y-10 mx-auto">
-          <Card to="/edukasi/asi" title="Asi Ekslusif" />
-          <Card to="/edukasi/menyusui" title="Cara Menyusui" />
-          <Card to="/edukasi/oksitosin" title="Hormon Oksitosin" />
-          <Card to="/edukasi/partner-menyusui" title="Partner Menyusui" />
+          <Card
+            img="../images/ASI_Eksklusif.png"
+            to="/edukasi/asi"
+            title="ASI Eksklusif"
+          />
+          <Card
+            img="../images/Cara_Menyusui.png"
+            to="/edukasi/menyusui"
+            title="Cara Menyusui"
+          />
+          <Card
+            img="../images/Hormon_Oksitosin.png"
+            to="/edukasi/oksitosin"
+            title="Hormon Oksitosin"
+          />
+          <Card
+            img="../images/Partner_Menyusui.png"
+            to="/edukasi/partner-menyusui"
+            title="Partner Menyusui"
+          />
         </div>
       </Wrapper>
     </>

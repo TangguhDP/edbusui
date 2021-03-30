@@ -8,7 +8,7 @@ export default function Asi() {
     <>
       <Banner/>
       <Wrapper>
-        <Hero title="ASI Eksklusif" />
+        <Hero img='../images/ASI_Eksklusif.png' title="ASI Eksklusif" />
         <section className="text-gray-600 body-font md:mt-6">
           <div className="container mx-auto flex flex-wrap flex-col">
             <div className="flex mx-auto flex-wrap mb-20">

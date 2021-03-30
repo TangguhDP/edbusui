@@ -8,7 +8,7 @@ export default function VRs() {
     <>
       <Banner />
       <Wrapper>
-        <Hero title="Virtual Reality">
+        <Hero img='../images/Virtual_Reality.png' title="Virtual Reality">
           <div className="flex justify-center">
             <a
               target="_blank"

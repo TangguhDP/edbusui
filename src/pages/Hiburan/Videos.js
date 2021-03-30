@@ -8,7 +8,7 @@ export default function Videos() {
     <>
       <Banner />
       <Wrapper>
-        <Hero title="Audio Visual" />
+        <Hero img='../images/Audio_Visual.png' title="Audio Visual" />
         <section className="overflow-hidden text-gray-700 body-font md:mt-6">
           <div className="container mx-auto lg:px-10">
             <div className="flex flex-wrap md:flex-no-wrap">

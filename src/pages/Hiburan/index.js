@@ -12,12 +12,14 @@ export default function index() {
           Hiburan
         </h1>
         <div className="grid grid-cols-2  gap-x-5 gap-y-10 mx-auto">
-          <Card
+        <Card
+            img="../images/Audio_Visual.png"
             to="/hiburan/videos"
             title="Hiburan Audio Visual"
             className="col-span-2 md:col-auto"
           />
           <Card
+            img="../images/Virtual_Reality.png"
             to="/hiburan/vr-videos"
             title="Virtual Reality"
             className="col-span-2 md:col-auto"
