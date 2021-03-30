@@ -7,3 +7,7 @@ export default function Content(props) {
     </div>
   );
 }
+
+export function Wrapper(props) {
+  return <div className="container mx-auto p-4 mb-16">{props.children}</div>;
+}

@@ -22,8 +22,6 @@ function App() {
     <Router history={history}>
       <Content>
         <TopNav/>
-        <Banner />
-        <div className="container mx-auto p-4 mb-16">
           <Switch>
             <Route exact path="/" component={Landing} />
             <Route exact path="/about-us" component={AboutUs} />
@@ -37,7 +35,6 @@ function App() {
             <Route exact path="/hiburan/vr-videos" component={VRs} />
             <Route component={NotFound}/>
           </Switch>
-        </div>
         <BottomNav />
       </Content>
     </Router>
