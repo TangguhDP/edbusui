@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "./layouts/Banner";
 import BottomNav from "./layouts/BottomNav";
 import { Router, Switch, Route } from "react-router-dom";
 import Landing from "./pages/Landing";

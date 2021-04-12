@@ -8,7 +8,14 @@ export default function Videos() {
     <>
       <Banner />
       <Wrapper>
-        <Hero img='../images/Audio_Visual.png' title="Audio Visual" />
+        <Hero
+          img="../images/Audio_Visual.png"
+          title="Audio Visual"
+          desc="Dengan menggunakan kemampuan audio visual yang dapat merangsang 
+          indra pengelihatan sekaligus indra pendengaran ibu menyusui akan sangat berguna untuk membantu 
+          meningkatkan rangsangan langsung terhadap tubuh. Video yang bertemakan kehangatan keluarga, 
+          bayi bertingkah lucu dan hubungan antara ibu dan anak, terbukti dapat membantu rangsangan hormon oksitosin."
+        />
         <section className="overflow-hidden text-gray-700 body-font md:mt-6">
           <div className="container mx-auto lg:px-10">
             <div className="flex flex-wrap md:flex-no-wrap">

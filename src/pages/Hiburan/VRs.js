@@ -8,7 +8,13 @@ export default function VRs() {
     <>
       <Banner />
       <Wrapper>
-        <Hero img='../images/Virtual_Reality.png' title="Virtual Reality">
+        <Hero
+          img="../images/Virtual_Reality.png"
+          title="Virtual Reality"
+          desc="Pemanfaatan teknologi Virtual Reality dapat membantu dan meningkatkan pengalaman pengguna dalam menikmati audio visual. 
+          Dengan pengalaman seperti berinteraksi secara langsung dengan lingkungan sekitar, akan dapat meningkatkan kemampuan 
+          rangsangan hormon oksitosin pada ibu menyusui dengan Virtual Reality bertemakan ketenangan, kenyamanan dan bayi."
+        >
           <div className="flex justify-center">
             <a
               target="_blank"

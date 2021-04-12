@@ -15,7 +15,7 @@ export default function Hero(props) {
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900">
             {props.title}
           </h1>
-          <p className="mb-8 leading-relaxed text-justify md:text-left">
+          <p className="mb-8 leading-relaxed text-justify">
             {props.desc || `Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
             plant cold-pressed tacos poke beard tote bag. Heirloom echo park
             mlkshk tote bag selvage hot chicken authentic tumeric truffaut
