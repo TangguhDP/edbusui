@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function TopNav() {
   return (
-    <header className="hidden sm:inline-flex text-gray-600 body-font justify-center w-screen bg-white fixed z-10 top-0">
+    <header className="hidden sm:inline-flex text-gray-600 body-font justify-center w-screen bg-white fixed z-20 top-0">
       <div className="container flex p-2 flex-col md:flex-row items-center">
         <Link
           to="/"
