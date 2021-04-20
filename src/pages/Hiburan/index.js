@@ -9,13 +9,13 @@ export default function index() {
       <Banner />
       <Wrapper>
         <h1 className="font-semibold text-left text-2xl mb-4 pb-1 border-b-2">
-          Hiburan
+          Terapi Audio Visual
         </h1>
         <div className="grid grid-cols-2  gap-x-5 gap-y-10 mx-auto">
         <Card
             img="../images/Audio_Visual.png"
             to="/hiburan/videos"
-            title="Hiburan Audio Visual"
+            title="Video"
             className="col-span-2 md:col-auto"
           />
           <Card

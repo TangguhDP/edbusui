@@ -6,9 +6,27 @@ import { Wrapper } from "../layouts/Content";
 export default function AboutUs() {
   return (
     <>
-      <Banner/>
+      <Banner>
+        <div className="w-full md:w-3/5 md:mt-20 break-words">
+          <h1 className="text-2xl md:text-3xl pb-2">
+            Selamat Datang di <b>EDBUSUI</b>
+          </h1>
+          <hr className="pt-1" />
+          <h1 className="text-base md:text-xl text-gray-200">
+            Sistem Informasi Edukasi Rangsangan Hormon Oksitosin untuk Ibu
+            Menyusui
+          </h1>
+        </div>
+      </Banner>
       <Wrapper>
-        <Hero title="Tangguh Destio Pramono" />
+        <Hero
+          img="../images/pp.jpg"
+          title="Profil pengembang dan sistem"
+          desc="Tangguh Destio Pramono adalah seorang mahasiswa tingkat akhir Universitas Gunadarma jurusan Sistem Infromasi. 
+          Tangguh membuat Sistem Informasi Edukasi Rangsangan Hormon Oksitosin pada Ibu Menyusui sebagai bentuk karya tulis ilmiah atau skripsi. 
+          Penggunaan website ini ditujukan untuk para ibu menyusui agar mempunyai pengetahuan terhadap penting nya asi untuk bayinya serta sebagai percobaan
+          terapi bagi ibu menyusui yang mengalami kesulitan dalam mengeluarkan air susunya."
+        />
         <section className="text-gray-600 body-font relative md:mt-6">
           <div className="container flex w-full flex-row">
             <div className="w-full md:h-96 bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-center relative">

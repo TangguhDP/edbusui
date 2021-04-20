@@ -13,10 +13,16 @@ export default function Banner(props) {
           props.children
         ) : (
           <>
-            <h1 className="text-2xl md:text-3xl">Selamat Datang ibu ibu</h1>
-            <h1 className="text-base md:text-1xl text-gray-200">
-              Siap untuk menyusui si kecil?
-            </h1>
+            <div className="w-full md:w-3/5 md:mt-20 break-words">
+              <h1 className="text-2xl md:text-3xl pb-2">
+                Selamat Datang di <b>EDBUSUI</b>
+              </h1>
+              <hr className="pt-1" />
+              <h1 className="text-base md:text-xl text-gray-200">
+                Sistem Informasi Edukasi Rangsangan Hormon Oksitosin untuk Ibu
+                Menyusui
+              </h1>
+            </div>
           </>
         )}
       </div>

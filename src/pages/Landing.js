@@ -22,31 +22,39 @@ export default function Landing() {
         <h1 className="text-left text-4xl mb-4 pb-1 border-b-2 font-bold">
           EDBUSUI
         </h1>
-        <p className="pb-2 text-justify md:text-lg">
-          Aplikasi <b>EDBUSUI</b> merupakan aplikasi yang dikhususkan untuk para
-          Ibu menyusui agar dapat teredukasi dalam proses menyusui si kecil.
-          Dengan memberikan fasilitas edukasi seperti{" "}
-          <span className="font-semibold">edukasi ASI ekslusif</span>,{" "}
-          <span className="font-semibold">
-            cara menyusui si kecil dengan panduan terpadu
-          </span>
-          ,{" "}
-          <span className="font-semibold">
-            informasi untuk menjaga kestabilan hormon oksitosin
-          </span>
-          , dan
-          <span className="font-semibold"> edukasi bagi partner menyusui</span>.
-        </p>
-
-        <p className="pb-2 text-justify md:text-lg">
-          Selain itu, aplikasi ini mempunyai fitur Hiburan untuk mendukung
-          proses rangsangan <b>Hormon Oksitosin</b> untuk para ibu yang
-          mengalami kesulitan mengeluarkan ASI. Dengan menyediakan konten audio
-          visual khusus yang sudah disesuaikan agar dapat membantu merangsang
-          Hormon Oksitosin dalam bentuk{" "}
-          <span className="font-semibold">kumpulan video youtube</span> dan{" "}
-          <span className="font-semibold italic">Youtube Virtual Reality</span>.
-        </p>
+        <div className='flex flex-col space-y-2 pb-2 md:pb-4 md:flex-row md:space-x-6 md:space-y-0 items-center'>
+          <p className="text-justify md:text-lg">
+            Aplikasi <b>EDBUSUI</b> merupakan aplikasi yang dikhususkan untuk
+            para Ibu menyusui agar dapat teredukasi dalam proses menyusui si
+            kecil. Dengan memberikan fasilitas edukasi seperti{" "}
+            <span className="font-semibold">edukasi ASI ekslusif</span>,{" "}
+            <span className="font-semibold">
+              cara menyusui si kecil dengan panduan terpadu
+            </span>
+            ,{" "}
+            <span className="font-semibold">
+              informasi untuk menjaga kestabilan hormon oksitosin
+            </span>
+            , dan
+            <span className="font-semibold">
+              {" "}
+              edukasi bagi partner menyusui
+            </span>
+            .
+          </p>
+          <p className="text-justify md:text-lg">
+            Selain itu, aplikasi ini mempunyai fitur Terapi untuk mendukung
+            proses rangsangan <b>Hormon Oksitosin</b> bagi para ibu yang
+            mengalami kesulitan mengeluarkan ASI. Dengan menyediakan konten
+            audio visual khusus yang sudah disesuaikan agar dapat membantu
+            merangsang Hormon Oksitosin dalam bentuk{" "}
+            <span className="font-semibold">kumpulan video youtube</span> dan{" "}
+            <span className="font-semibold italic">
+              Youtube Virtual Reality
+            </span>
+            .
+          </p>
+        </div>
 
         <h1 className="font-semibold text-left text-2xl mb-4 pb-1 border-b-2">
           Edukasi
@@ -74,13 +82,13 @@ export default function Landing() {
           />
         </div>
         <h1 className="font-semibold text-left text-2xl my-4 pb-1 border-b-2">
-          Hiburan
+          Terapi Audio Visual
         </h1>
         <div className="grid grid-cols-2 gap-x-5 gap-y-10 mx-auto">
           <Card
             img="../images/Audio_Visual.png"
             to="/hiburan/videos"
-            title="Hiburan Audio Visual"
+            title="Video"
             className="col-span-2 md:col-auto"
           />
           <Card

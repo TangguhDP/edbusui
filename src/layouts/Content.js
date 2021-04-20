@@ -9,5 +9,5 @@ export default function Content(props) {
 }
 
 export function Wrapper(props) {
-  return <div className="container mx-auto p-4 mb-16">{props.children}</div>;
+  return <div className="container mx-auto p-4 mb-20">{props.children}</div>;
 }

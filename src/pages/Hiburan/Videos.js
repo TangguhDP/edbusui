@@ -10,7 +10,7 @@ export default function Videos() {
       <Wrapper>
         <Hero
           img="../images/Audio_Visual.png"
-          title="Audio Visual"
+          title="Video"
           desc="Dengan menggunakan kemampuan audio visual yang dapat merangsang 
           indra pengelihatan sekaligus indra pendengaran ibu menyusui akan sangat berguna untuk membantu 
           meningkatkan rangsangan langsung terhadap tubuh. Video yang bertemakan kehangatan keluarga, 

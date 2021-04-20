@@ -42,7 +42,7 @@ export default function BottomNav() {
         {pathname.includes("hiburan") ? (
           <>
             <IconsHiburanOn className="w-7 h-7" />
-            <small className="font-semibold transition-all ease-out duration-100">Hiburan</small>
+            <small className="font-semibold transition-all ease-out duration-100">Terapi</small>
           </>
         ) : (
           <IconsHiburanOff className="w-7 h-7" />
