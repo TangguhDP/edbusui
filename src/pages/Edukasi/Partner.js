@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../../components/Hero";
+import TextPartner from "../../components/TextPartner";
 import Banner from "../../layouts/Banner";
 import { Wrapper } from "../../layouts/Content";
 
@@ -8,95 +9,14 @@ export default function Partner() {
     <>
       <Banner />
       <Wrapper>
-        <Hero img='../images/Partner_Menyusui.png' title="Partner" />
-        <section className="text-gray-600 body-font md:mt-6">
-          <div className="container mx-auto flex flex-wrap">
-            <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-              <img
-                alt="feature"
-                className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/460x500"
-              />
-            </div>
-            <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-              <div className="flex flex-col mb-10 lg:items-start items-center">
-                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                  </svg>
-                </div>
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                    Shooting Stars
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col mb-10 lg:items-start items-center">
-                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx={6} cy={6} r={3} />
-                    <circle cx={6} cy={18} r={3} />
-                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
-                  </svg>
-                </div>
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                    The Catalyzer
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col mb-10 lg:items-start items-center">
-                <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                    <circle cx={12} cy={7} r={4} />
-                  </svg>
-                </div>
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                    Neptune
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero
+          img="../images/Partner_Menyusui.png"
+          title="Partner"
+          desc="Proses menyusui si kecil akan terasa lebih mudah jika ada orang terdekat yang ikut hadir mendukung dan menyemangati. karena pada masa seperti itu, ibu akan sangat membutuhkan informasi, istirahat, dan waktu untuk belajar. 
+          Hal yang terpenting adalah membutuhkan dukungan moral dan komitmen yang menjanjikan dari orang terdekat agar proses menyusui menjadi sukses.
+          "
+        />
+        <TextPartner />
       </Wrapper>
     </>
   );
