@@ -26,7 +26,7 @@ export default function TopNav() {
             Info
           </Link>
         </nav>
-        <button className="inline-flex items-center text-clearDay bg-greenPea border-0 py-1 px-3 focus:outline-none hover:bg-paradiso rounded text-base mt-4 md:mt-0 transition-all ease-in">
+        <Link to='/wa-daftar' className="inline-flex items-center text-clearDay bg-greenPea border-0 py-1 px-3 focus:outline-none hover:bg-paradiso rounded text-base mt-4 md:mt-0 transition-all ease-in">
           Daftar
           <svg
             fill="none"
@@ -39,7 +39,7 @@ export default function TopNav() {
           >
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
-        </button>
+        </Link>
       </div>
     </header>
   );

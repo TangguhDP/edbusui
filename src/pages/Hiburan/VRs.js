@@ -20,7 +20,7 @@ export default function VRs() {
               target="_blank"
               href="https://youtu.be/playlist?list=PLHH1cK99CprT-8rpBxDlIuImkghb9QSid"
               rel="noreferrer"
-              className="inline-flex sm:hidden text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              className="inline-flex sm:hidden text-clearDay bg-greenPea border-0 py-2 px-6 focus:outline-none hover:bg-paradiso rounded text-lg"
             >
               Buka Youtube VR
             </a>

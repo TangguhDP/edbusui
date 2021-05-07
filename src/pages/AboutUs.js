@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import Banner from "../layouts/Banner";
 import { Wrapper } from "../layouts/Content";
@@ -58,7 +59,7 @@ export default function AboutUs() {
                   </h2>
                   <a
                     href="mailto:tangguhmyname@gmail.com"
-                    className="text-indigo-500 leading-relaxed"
+                    className="text-paradiso-500 leading-relaxed"
                   >
                     tangguhmyname@gmail.com
                   </a>
@@ -69,6 +70,14 @@ export default function AboutUs() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="flex justify-center my-4">
+            <Link
+              to="/wa-daftar"
+              className="inline-flex text-clearDay bg-greenPea border-0 py-2 px-6 focus:outline-none hover:bg-paradiso rounded text-lg"
+            >
+              Daftar member klinik
+            </Link>
           </div>
         </section>
       </Wrapper>
