@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function TopNav() {
   return (
-    <header className="hidden sm:inline-flex text-gray-600 body-font justify-center w-screen bg-white fixed z-10 top-0">
+    <header className="hidden sm:inline-flex text-gray-600 body-font justify-center w-screen bg-white fixed z-20 top-0">
       <div className="container flex p-2 flex-col md:flex-row items-center">
         <Link
           to="/"
@@ -20,14 +20,14 @@ export default function TopNav() {
             Edukasi
           </Link>
           <Link to="/hiburan" className="mr-5 hover:text-gray-900">
-            Hiburan
+            Terapi
           </Link>
           <Link to="/about-us" className="mr-5 hover:text-gray-900">
             Info
           </Link>
         </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          Button
+        <Link to='/wa-daftar' className="inline-flex items-center text-clearDay bg-greenPea border-0 py-1 px-3 focus:outline-none hover:bg-paradiso rounded text-base mt-4 md:mt-0 transition-all ease-in">
+          Daftar
           <svg
             fill="none"
             stroke="currentColor"
@@ -39,7 +39,7 @@ export default function TopNav() {
           >
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
-        </button>
+        </Link>
       </div>
     </header>
   );
