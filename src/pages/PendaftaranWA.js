@@ -30,7 +30,6 @@ export default function PendaftaranWA() {
       </Banner>
       <Wrapper>
         <form
-          action={`https://api.whatsapp.com/send?phone=6281283143935&text=Assalamualaikum%2C%20Bu%20Saya%20mau%20daftar%20ke%20Klinik%20untuk%20perawatan%20bayi.%0ANama%20Orang%20Tua%3A${inputs.namaOrtu}%2C%0ANama%20Anak%3A${inputs.namaAnak}%2C%0AUmur%3A${inputs.umurAnak}%2C%0ATelepon%3A${inputs.nomor}%2C%0AEmail%3A${inputs.email}%2C%0AAsal%3A${inputs.asal}%2C%0AAlamat%3A${inputs.alamat}%0ATerimakasih%20bunda`}
           className="md:w-2/4 flex flex-col mx-auto space-y-2 mb-4"
         >
           <InputText
@@ -94,12 +93,12 @@ export default function PendaftaranWA() {
             inputs.nomor &&
             inputs.alamat &&
             inputs.email && (
-              <button
-                type="submit"
+              <a
+                href={`https://api.whatsapp.com/send?phone=6281283143935&text=Assalamualaikum%2C%20Bu%20Saya%20mau%20daftar%20ke%20Klinik%20untuk%20perawatan%20bayi.%0ANama%20Orang%20Tua%3A${inputs.namaOrtu}%2C%0ANama%20Anak%3A${inputs.namaAnak}%2C%0AUmur%3A${inputs.umurAnak}%2C%0ATelepon%3A${inputs.nomor}%2C%0AEmail%3A${inputs.email}%2C%0AAsal%3A${inputs.asal}%2C%0AAlamat%3A${inputs.alamat}%0ATerimakasih%20bunda`}
                 className="text-clearDay text-center font-bold text-lg bg-greenPea border-0 p-4 focus:outline-none hover:bg-paradiso rounded transition-all ease-in"
               >
                 SUBMIT
-              </button>
+              </a>
             )}
         </form>
       </Wrapper>
